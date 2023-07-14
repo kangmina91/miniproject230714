@@ -172,6 +172,7 @@ $(function () {
     });
 
 
+
     $(window).on('resize', function () {
         $('.gnb').removeClass('on');
     })
