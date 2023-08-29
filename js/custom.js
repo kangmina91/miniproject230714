@@ -166,16 +166,15 @@ $(function () {
 
         if ($('.gnb').hasClass('on')) {
             e.preventDefault();
+            $(this).next().stop().slideToggle();
+            $(this).parent().siblings().find('.gnb .sub_menu').stop().slideUp();
         }
-        $(this).next().stop().slideToggle();
-        $(this).parent().siblings().find('.gnb .sub_menu').stop().slideUp();
     });
 
 
-
-
     $(window).on('resize', function () {
-        $('.gnb .sub_menu').removeAttr('style')
+        $('.gnb .sub_menu').removeAttr('style');
+        $('.gnb').removeClass('on');
     })
 
     // 모바일 메뉴 스크롤 없애기
