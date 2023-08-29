@@ -13,9 +13,9 @@
 .btn {
   position: relative;
   display: inline-block;
-  padding: 15rem 50rem;
+  padding: 1.5rem 5rem;
   color: var(--mc);
-  font-size: 15rem;
+  font-size: 1.5rem;
   font-weight: 300;
   text-transform: uppercase;
   border: 1px solid var(--mc);
@@ -56,13 +56,13 @@
 
 .header {
   z-index: 999;
-  height: 80rem;
+  height: 8rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background: rgb(255, 255, 255);
-  box-shadow: 3rem 0rem 10rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0.3rem 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 .header .header_wrap {
@@ -71,20 +71,20 @@
   align-items: center;
   max-width: 100%;
   z-index: 1000;
-  line-height: 80rem;
+  line-height: 8rem;
 }
 
 .header .logo a {
   display: block;
   margin: 0 auto;
-  width: 150rem;
-  height: 80rem;
+  width: 15rem;
+  height: 8rem;
   background: url("../images/logo.svg") center center no-repeat;
   background-size: contain;
 }
 
 .header .gnb {
-  width: 1200rem;
+  width: 120rem;
   word-break: keep-all;
   white-space: nowrap;
   border-left: 1px solid var(--line);
@@ -95,7 +95,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  gap: 80rem;
+  gap: 8rem;
 }
 
 /* 후버 - 색상 */
@@ -106,7 +106,7 @@
 .header .gnb>ul>li>a {
   position: relative;
   display: block;
-  font-size: 20rem;
+  font-size: 2rem;
   letter-spacing: 0.1em;
 }
 
@@ -114,10 +114,10 @@
 .header .gnb>ul>li>a::before {
   position: absolute;
   left: 0;
-  top: 53rem;
+  top: 5.3rem;
   content: "";
   width: 0;
-  height: 2rem;
+  height: 0.2rem;
   background: #007ede;
   transition: 0.4s;
 }
@@ -126,7 +126,7 @@
 .header .gnb>ul>li:hover>a::before {
   content: "";
   width: 100%;
-  height: 2rem;
+  height: 0.2rem;
   background: #007ede;
 }
 
@@ -136,16 +136,16 @@
 /* 서브 메뉴 높이 0 */
 .header .gnb .sub_menu {
   position: absolute;
-  top: 80rem;
+  top: 8rem;
   left: 50%;
   transform: translate(-50%, 0);
   height: 100%;
-  width: 300rem;
+  width: 30rem;
   text-align: left;
-  padding: 30rem;
+  padding: 3rem;
   word-break: keep-all;
   white-space: nowrap;
-  margin: 0 0 0 -220rem;
+  margin: 0 0 0 -22rem;
   display: none;
 }
 
@@ -170,7 +170,7 @@
 }
 
 .header .gnb>ul>li:hover .sub_menu::before {
-  height: 400rem;
+  height: 40rem;
 }
 
 
@@ -184,10 +184,10 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: -30rem 0 0 -250rem;
+  margin: -3rem 0 0 -25rem;
   background: #ddd;
-  width: 1rem;
-  height: 400rem;
+  width: 1px;
+  height: 40rem;
 }
 
 .header .gnb>ul>li .sub_menu .sub_title h2 {
@@ -195,13 +195,13 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  margin: 0 0 0 -505rem;
+  margin: 0 0 0 -50.5rem;
   width: 100%;
   height: 100%;
   text-align: left;
-  font-size: 56rem;
+  font-size: 5.6rem;
   font-weight: 600;
-  text-shadow: 5rem 5rem rgba(0, 0, 0, 0.1);
+  text-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 
@@ -213,11 +213,11 @@
 /* 서브메뉴들의 a태그 */
 .header .gnb>ul>li:hover .sub_menu>li>a {
   display: block;
-  width: 360rem;
+  width: 36rem;
   color: var(--bc);
-  font-size: 18rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 40rem;
+  line-height: 4rem;
 }
 
 .header .gnb>ul>li:hover .sub_menu>li>a::after {
@@ -232,7 +232,7 @@
   content: "\e93e";
   font-family: xeicon;
   font-weight: 900;
-  transform: translateX(50rem);
+  transform: translateX(5rem);
   color: var(--mc);
 }
 
@@ -254,14 +254,14 @@
 .header .gnb>ul>li:hover .sub_menu>li:hover>ul {
   position: absolute;
   top: 0;
-  left: 360rem;
+  left: 36rem;
   text-align: left;
   display: block;
 }
 
 .header .gnb>ul>li:hover .sub_menu>li:hover>ul>li>a {
   display: block;
-  line-height: 40rem;
+  line-height: 4rem;
 }
 
 .header .gnb>ul>li:hover .sub_menu>li:hover>ul>li:hover {
@@ -271,7 +271,7 @@
 .header .gnb_box {
   display: flex;
   justify-content: center;
-  gap: 16rem;
+  gap: 1.6rem;
 }
 
 .header .gnb_box> :first-child {
@@ -299,7 +299,7 @@
   top: 58%;
   left: 50%;
   transform: translate(0%, -50%);
-  margin: 0 0 0 -600rem;
+  margin: 0 0 0 -60rem;
 }
 
 .main_visual .main_slide .itm01 {
@@ -318,121 +318,118 @@
 }
 
 .main_visual .itm h3 {
-  font-size: 26rem;
+  font-size: 2.6rem;
   font-weight: 300;
   line-height: 1;
   color: rgba(255, 255, 255, 0.7);
-  margin: 0 0 50rem 0;
+  margin: 0 0 5rem 0;
 }
 
 .main_visual .itm span {
   display: block;
   text-transform: uppercase;
-  font-size: 100rem;
+  font-size: 10rem;
   font-weight: 600;
   line-height: 1.1;
   color: #fff;
-  margin: 0 0 50rem 0;
+  margin: 0 0 5rem 0;
 }
 
 .main_visual .arrows {
   position: absolute;
   left: 50%;
   top: 50%;
-  max-width: 1920rem;
+  max-width: 192rem;
   width: 100%;
   transform: translate(-50%, -50%);
 }
 
 .main_visual .arrows i {
-  font-size: 70rem;
+  font-size: 7rem;
   color: var(--wc);
-  padding: 15rem;
+  padding: 1.5rem;
   cursor: pointer;
   font-weight: 100;
 }
 
 .main_visual .arrows .left {
   position: absolute;
-  left: 15rem;
+  left: 1.5rem;
   top: 0;
 }
 
 .main_visual .arrows .right {
   position: absolute;
-  right: 15rem;
+  right: 1.5rem;
   top: 0;
 }
 
-.main_product {}
 
 .product_slide {
   position: relative;
 }
 
-.main_product {}
-
 .main_product .product_slide .itm {
   display: grid;
-  grid-template-columns: 600rem 600rem;
+  grid-template-columns: 60rem 60rem;
   justify-content: space-between;
   align-items: center;
-  gap: 150rem;
+  gap: 15rem;
 }
 
 .main_product .product_slide .itm .txt {
   position: relative;
-  height: 420rem;
+  height: 42rem;
   color: var(--mc);
   font-weight: 600;
 }
 
 /* 상품 번호 */
 .main_product .product_slide .itm .txt h2 {
-  font-size: 22rem;
-  margin: 0 0 50rem 0;
+  font-size: 2.2rem;
+  margin: 0 0 5.0rem 0;
 }
 
 /* Product */
 .main_product .product_slide .itm .txt span {
   color: var(--bc);
-  margin: 0 0 0 50rem;
+  margin: 0 0 0 5.0rem;
 }
 
 /* Product */
 .main_product .product_slide .itm .txt span em {
-  border-bottom: 4rem solid var(--mc);
-  padding-bottom: 4rem;
+  border-bottom: 0.4rem solid var(--mc);
+  padding-bottom: 0.4rem;
   display: inline-block;
   color: var(--bc);
 }
 
 /* 상품명 */
 .main_product .product_slide .itm .txt h3 {
-  padding-left: 75rem;
-  font-size: 40rem;
+  padding-left: 7.5rem;
+  font-size: 4rem;
   font-weight: 400;
-  margin: 0 0 10rem 0;
+  margin: 0 0 1rem 0;
   color: var(--bc);
 }
 
 /* 상품 설명 */
 .main_product .product_slide .itm .txt p {
-  font-size: 16rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
-  padding: 0 0 0 75rem;
+  padding: 0 0 0 7.5rem;
   word-break: keep-all;
   color: var(--bc);
-  margin: 0 0 100rem 0;
+  margin: 0 0 10rem 0;
 }
 
 .main_product .product_slide .itm .txt a {
-  margin: 0 0 0 75rem;
+  margin: 0 0 0 7.5rem;
 }
 
 .main_product .product_slide .itm .img_box {
-  width: 500rem;
+  width: 50rem;
   height: 100%;
   position: relative;
 }
@@ -447,34 +444,34 @@
 .main_product .product_slide .slick-dots {
   position: absolute;
   left: 0;
-  bottom: 20rem;
-  margin: 0 0 0 70rem;
+  bottom: 2rem;
+  margin: 0 0 0 7rem;
 }
 
 .main_product .product_slide .slick-dots>* {
   display: inline-block;
-  margin: 0 5rem;
+  margin: 0 0.5rem;
 }
 
 .main_product .product_slide .slick-dots li button {
   background: rgba(0, 0, 0, 0.1);
-  padding: 5rem;
+  padding: 0.5rem;
   font-size: 0;
-  width: 12rem;
-  height: 12rem;
+  width: 1.2rem;
+  height: 1.2rem;
   border: none;
   outline: none;
   transition: 0.5s;
 }
 
 .main_product .product_slide .slick-dots li.slick-active button {
-  height: 20rem;
+  height: 2rem;
   background-color: var(--mc);
   transition: 0.5s;
 }
 
 .main_product .img_v2 {
-  width: 300rem;
+  width: 30rem;
   position: absolute;
   left: 50%;
   top: 0;
@@ -514,20 +511,20 @@
 .main_solution .solution_slide .itm .img_box figure {}
 
 .main_solution .solution_slide .itm .img_box figure img {
-  width: 550rem;
-  height: 450rem;
+  width: 55rem;
+  height: 45rem;
   object-fit: cover;
-  margin: 0 auto 50rem auto;
+  margin: 0 auto 5rem auto;
 }
 
 .main_solution .solution_slide .itm .img_box .btn_white {
   position: absolute;
-  left: 70rem;
-  top: 25rem;
+  left: 7rem;
+  top: 2.5rem;
   display: inline-block;
-  padding: 10rem 35rem;
+  padding: 1rem 3.5rem;
   color: var(--wc);
-  font-size: 15rem;
+  font-size: 1.5rem;
   font-weight: 300;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: var(--line);
@@ -536,20 +533,20 @@
 
 .main_solution .solution_slide .itm .tit {
   width: 100%;
-  height: 100rem;
+  height: 10rem;
 }
 
 .main_solution .solution_slide .itm .tit h3 {
-  font-size: 32rem;
+  font-size: 3.2rem;
   font-weight: 700;
   text-align: center;
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
-  padding: 0 0 15rem 0;
+  padding: 0 0 1.5rem 0;
 }
 
 .main_solution .solution_slide .itm.on .tit h3 {
-  font-size: 60rem;
+  font-size: 6rem;
   color: #ddd;
   transition: 0.5s;
 }
@@ -558,21 +555,21 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: -50rem;
+  bottom: -5rem;
 }
 
 .main_solution .solution_slide .slick-dots>* {
   display: inline-block;
-  margin: 10rem 5rem;
+  margin: 1rem 0.5rem;
 }
 
 .main_solution .solution_slide .slick-dots li button {
   background: rgba(255, 255, 255, 0.1);
-  padding: 5rem;
+  padding: 0.5rem;
   border-radius: 50%;
   font-size: 0;
-  width: 5rem;
-  height: 5rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border: none;
   outline: none;
   transition: 0.5s;
@@ -586,29 +583,29 @@
 .main_solution .arrows {
   position: absolute;
   left: 50%;
-  top: 300rem;
-  max-width: 725rem;
+  top: 30rem;
+  max-width: 72.5rem;
   width: 100%;
   z-index: 0;
   transform: translate(-50%, -50%);
 }
 
 .main_solution .arrows i {
-  font-size: 36rem;
+  font-size: 3.6rem;
   color: var(--wc);
-  padding: 15rem;
+  padding: 1.5rem;
   cursor: pointer;
 }
 
 .main_solution .arrows .left {
   position: absolute;
-  left: 15rem;
+  left: 1.5rem;
   top: 0;
 }
 
 .main_solution .arrows .right {
   position: absolute;
-  right: 15rem;
+  right: 1.5rem;
   top: 0;
 }
 
@@ -617,17 +614,17 @@
 }
 
 .main_news .title h2 {
-  font-size: 24rem;
-  margin: 0 0 30rem 0;
+  font-size: 2.4rem;
+  margin: 0 0 3rem 0;
   font-weight: 600;
 }
 
 .main_news .con {
   display: grid;
-  grid-template-columns: 25rem 400rem auto 25rem;
-  gap: 60rem;
+  grid-template-columns: 2.5rem 40rem auto 2.5rem;
+  gap: 6rem;
 
-  padding: 60rem 0;
+  padding: 6rem 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -644,7 +641,7 @@
 }
 
 .main_news .con h3 {
-  font-size: 24rem;
+  font-size: 2.4rem;
   word-break: keep-all;
   font-weight: 500;
 }
@@ -653,18 +650,18 @@
 
 .main_news .con span {
   display: block;
-  font-size: 16rem;
-  margin: 20rem 0 0 0;
+  font-size: 1.6rem;
+  margin: 2rem 0 0 0;
 }
 
 .main_news .con>a {
-  font-size: 50rem;
+  font-size: 5rem;
   font-weight: 200;
 }
 
 .main_contact {
   background: url(../images/main_contact.png) no-repeat bottom;
-  height: 560rem;
+  height: 56rem;
   width: 100%;
   position: relative;
   background-size: cover;
@@ -672,7 +669,7 @@
 }
 
 .main_contact .inner {
-  font-size: 44rem;
+  font-size: 4.4rem;
   color: var(--wc);
   font-weight: 900;
   text-align: center;
@@ -680,8 +677,8 @@
 
 .main_contact .inner .btn_c {
   display: block;
-  width: 320rem;
-  height: 320rem;
+  width: 32rem;
+  height: 32rem;
   position: absolute;
   left: 50%;
   bottom: 20%;
@@ -695,12 +692,12 @@
   top: 50%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
-  line-height: 100rem;
+  line-height: 10rem;
 }
 
 .main_contact .inner .btn_c i {
   display: block;
-  font-size: 56rem;
+  font-size: 5.6rem;
 }
 
 /* 
@@ -711,22 +708,22 @@
 
 .footer {
   background: #1a1a1a;
-  padding: 50rem 0 0 0;
+  padding: 5rem 0 0 0;
   color: #fff;
 }
 
 .footer .content h2 {
-  width: 200rem;
-  margin: 0 0 30rem 0;
+  width: 20rem;
+  margin: 0 0 3rem 0;
 }
 
 .footer .content .ft {
   display: grid;
-  grid-template-columns: 350rem 720rem;
-  margin: 0 auto 50rem auto;
+  grid-template-columns: 35rem 72rem;
+  margin: 0 auto 5rem auto;
   align-items: center;
   color: #999;
-  gap: 100rem;
+  gap: 10rem;
 }
 
 .footer .content .ft .left {
@@ -736,19 +733,18 @@
 .footer .content .ft .left .contact {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 1rem;
 
   color: #ddd;
-  font-size: 14rem;
-  margin: 0 0 30rem 0;
+  font-size: 1.4rem;
+  margin: 0 0 3rem 0;
 }
 
 .footer .content .ft .left span {
-  font-size: 13rem;
+  font-size: 1.3rem;
   color: #999;
 }
 
-.footer .content .ft .right {}
 
 .footer .content .ft .right .fm {
   display: flex;
@@ -757,23 +753,23 @@
 
 .footer .content .ft .right .fm>li>a {
   display: block;
-  font-size: 16rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #ddd;
-  margin: 0 0 30rem 0;
+  margin: 0 0 3rem 0;
 }
 
 .footer .content .ft .right .fm>li>ul>li {
-  font-size: 14rem;
+  font-size: 1.4rem;
 }
 
 .footer .content .ft .right .fm>li>ul>li:not(:last-child) {
-  margin: 0 0 10rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .footer .content .fb {
   border-top: 1px solid #666;
-  padding: 10rem 0;
+  padding: 1rem 0;
   color: #ddd;
 }
 
@@ -788,15 +784,15 @@
 }
 
 .footer .content .fb .fb_box li:not(:last-child) {
-  margin-right: 10rem;
+  margin-right: 1rem;
 }
 
 .footer .content .fb .icon {
-  font-size: 28rem;
+  font-size: 2.8rem;
 }
 
 .footer .content .fb .customer {
-  font-size: 14rem;
+  font-size: 1.4rem;
 }
 
 .footer .content .fb .customer li {
@@ -807,10 +803,10 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: -8rem;
+  left: -0.8rem;
   transform: translate(0, -50%);
-  width: 2rem;
-  height: 2rem;
+  width: 0.2rem;
+  height: 0.2rem;
   background: #999;
 }
 
@@ -831,7 +827,7 @@
 @media (max-width: 767px) {
 
   .section {
-    padding: 30rem 0;
+    padding: 3rem 0;
   }
 
   /*
@@ -843,7 +839,7 @@
   /* r */
   .header {
     z-index: 999;
-    height: 80rem;
+    height: 8rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -887,12 +883,12 @@
   .header .gnb>ul {
     flex-direction: column;
     gap: 0;
-    margin: 200rem 0 0 0
+    margin: 20rem 0 0 0
   }
 
   /* r */
   .header .gnb>ul>li {
-    line-height: 50rem;
+    line-height: 5rem;
     width: 100%;
     text-align: center;
   }
@@ -904,7 +900,7 @@
 
   /* r */
   .header .gnb>ul>li>a {
-    font-size: 20rem;
+    font-size: 2rem;
   }
 
   /* r  밑줄 없애기 */
@@ -949,9 +945,9 @@
   .header .gnb>ul>li .sub_menu>li>a {
     display: block;
     width: 100%;
-    font-size: 18rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 40rem;
+    line-height: 4rem;
   }
 
 
@@ -959,9 +955,9 @@
   .header .gnb>ul>li:hover .sub_menu>li>a {
     display: block;
     width: 100%;
-    font-size: 18rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 40rem;
+    line-height: 4rem;
   }
 
 
@@ -1024,23 +1020,23 @@
 
   /* r */
   .main_visual .itm h3 {
-    font-size: 15rem;
-    margin: 0 0 30rem 0;
+    font-size: 1.5rem;
+    margin: 0 0 3rem 0;
   }
 
   /* r */
   .main_visual .itm span {
-    font-size: 25rem;
-    margin: 0 0 100rem 0;
+    font-size: 2.5rem;
+    margin: 0 0 10rem 0;
   }
 
   /* r */
   .main_visual .btn {
     position: relative;
     display: inline-block;
-    padding: 10rem 25rem;
+    padding: 1rem 2.5rem;
     color: var(--wc);
-    font-size: 15rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     border: 1px solid var(--wc);
     font-weight: 500;
@@ -1061,7 +1057,7 @@
   /* r */
   .main_product .slick-slider {
     width: 100%;
-    height: 550rem;
+    height: 55rem;
   }
 
   /* r */
@@ -1070,23 +1066,23 @@
     grid-template-columns: repeat(1, 1fr);
     justify-content: space-between;
     align-items: center;
-    gap: 30rem;
+    gap: 3rem;
   }
 
   /* r */
   .main_product .product_slide .itm .txt {
-    height: 550rem;
+    height: 55rem;
   }
 
   /* 상품 설명 r */
   .main_product .product_slide .itm .txt p {
-    margin: 0 0 30rem 0;
+    margin: 0 0 3rem 0;
   }
 
   /* r */
   .main_product .product_slide .itm img {
-    width: 300rem;
-    height: 300rem;
+    width: 30rem;
+    height: 30rem;
     object-fit: contain;
   }
 
@@ -1109,9 +1105,9 @@
   .main_product .btn {
     position: relative;
     display: inline-block;
-    padding: 10rem 20rem;
+    padding: 1rem 2rem;
     color: var(--mc);
-    font-size: 13rem;
+    font-size: 1.3rem;
     font-weight: 300;
     text-transform: uppercase;
     border: 1px solid var(--mc);
@@ -1135,26 +1131,26 @@
 
   /* r */
   .main_solution {
-    height: 500rem;
+    height: 50rem;
     padding: 0 0 0 0;
   }
 
   /* r */
   .main_solution .solution_slide .itm .img_box figure img {
     width: 100%;
-    height: 300rem;
+    height: 30rem;
     object-fit: cover;
-    margin: 0 auto 20rem auto;
+    margin: 0 auto 2rem auto;
   }
 
   /* r */
   .main_solution .solution_slide .itm .tit h3 {
-    font-size: 30rem;
+    font-size: 3rem;
   }
 
   /* r */
   .main_solution .solution_slide .itm.on .tit h3 {
-    font-size: 30rem;
+    font-size: 3rem;
   }
 
   /* r */
@@ -1175,13 +1171,13 @@
   /* r */
   .main_news .con {
     grid-template-columns: repeat(1, 1fr);
-    gap: 30rem;
-    padding: 30rem 0;
+    gap: 3rem;
+    padding: 3rem 0;
   }
 
   /* r */
   .main_news .con em {
-    font-size: 20rem;
+    font-size: 2rem;
   }
 
   /* r */
@@ -1202,8 +1198,8 @@
 
   /* r */
   .main_contact .inner .btn_c {
-    width: 250rem;
-    height: 250rem;
+    width: 25rem;
+    height: 25rem;
     bottom: 0;
   }
 
@@ -1215,13 +1211,13 @@
 
   /* r */
   .footer .content h2 {
-    margin: 0 0 30rem 0;
+    margin: 0 0 3rem 0;
   }
 
   /* r */
   .footer .content .ft {
     grid-template-columns: repeat(1, 1fr);
-    margin: 0 auto 30rem auto;
+    margin: 0 auto 3rem auto;
   }
 
   /* r */
@@ -1324,7 +1320,7 @@
 
 @media all and (min-width:768px) and (max-width:1024px) {
   .section {
-    padding: 50rem 0;
+    padding: 5rem 0;
   }
 
   /*
@@ -1336,7 +1332,7 @@
   /* r */
   .header {
     z-index: 999;
-    height: 100rem;
+    height: 10rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -1355,8 +1351,8 @@
   /* r */
   .header .logo a {
     position: fixed;
-    width: 200rem;
-    height: 100rem;
+    width: 20rem;
+    height: 10rem;
     z-index: 1002;
   }
 
@@ -1382,12 +1378,12 @@
   .header .gnb>ul {
     flex-direction: column;
     gap: 0;
-    margin: 200rem 0 0 0
+    margin: 20rem 0 0 0
   }
 
   /* r */
   .header .gnb>ul>li {
-    line-height: 100rem;
+    line-height: 10rem;
     width: 100%;
     text-align: center;
   }
@@ -1399,7 +1395,7 @@
 
   /* r */
   .header .gnb>ul>li>a {
-    font-size: 36rem;
+    font-size: 3.6rem;
   }
 
   /* r  밑줄 없애기 */
@@ -1444,9 +1440,9 @@
   .header .gnb>ul>li .sub_menu>li>a {
     display: block;
     width: 100%;
-    font-size: 18rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 40rem;
+    line-height: 4rem;
   }
 
 
@@ -1454,9 +1450,9 @@
   .header .gnb>ul>li:hover .sub_menu>li>a {
     display: block;
     width: 100%;
-    font-size: 18rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 40rem;
+    line-height: 4rem;
   }
 
 
@@ -1520,23 +1516,23 @@
 
   /* 1200 r  */
   .main_visual .itm h3 {
-    font-size: 30rem;
-    margin: 0 0 30rem 0;
+    font-size: 3rem;
+    margin: 0 0 3rem 0;
   }
 
   /* 1200 r */
   .main_visual .itm span {
-    font-size: 40rem;
-    margin: 0 0 130rem 0;
+    font-size: 4rem;
+    margin: 0 0 13rem 0;
   }
 
   /* r */
   .main_visual .btn {
     position: relative;
     display: inline-block;
-    padding: 10rem 25rem;
+    padding: 1rem 2.5rem;
     color: var(--wc);
-    font-size: 15rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     border: 1px solid var(--wc);
     font-weight: 500;
@@ -1557,7 +1553,7 @@
   /* r */
   .main_product .slick-slider {
     width: 100%;
-    height: 550rem;
+    height: 55rem;
   }
 
   /* r */
@@ -1566,23 +1562,23 @@
     grid-template-columns: repeat(1, 1fr);
     justify-content: space-between;
     align-items: center;
-    gap: 30rem;
+    gap: 3rem;
   }
 
   /* r */
   .main_product .product_slide .itm .txt {
-    height: 550rem;
+    height: 55rem;
   }
 
   /* 상품 설명 r */
   .main_product .product_slide .itm .txt p {
-    margin: 0 0 30rem 0;
+    margin: 0 0 3rem 0;
   }
 
   /* r */
   .main_product .product_slide .itm img {
-    width: 300rem;
-    height: 300rem;
+    width: 30rem;
+    height: 30rem;
     object-fit: contain;
   }
 
@@ -1605,9 +1601,9 @@
   .main_product .btn {
     position: relative;
     display: inline-block;
-    padding: 10rem 20rem;
+    padding: 1rem 2rem;
     color: var(--mc);
-    font-size: 13rem;
+    font-size: 1.3rem;
     font-weight: 300;
     text-transform: uppercase;
     border: 1px solid var(--mc);
@@ -1631,26 +1627,26 @@
 
   /* r 1200 */
   .main_solution {
-    height: 650rem;
+    height: 65rem;
     padding: 0 0 0 0;
   }
 
   /* r 1200 */
   .main_solution .solution_slide .itm .img_box figure img {
     width: 100%;
-    height: 450rem;
+    height: 45rem;
     object-fit: cover;
-    margin: 0 auto 20rem auto;
+    margin: 0 auto 2rem auto;
   }
 
   /* r */
   .main_solution .solution_slide .itm .tit h3 {
-    font-size: 30rem;
+    font-size: 3rem;
   }
 
   /* r */
   .main_solution .solution_slide .itm.on .tit h3 {
-    font-size: 30rem;
+    font-size: 3rem;
   }
 
   /* r 1200 */
@@ -1671,13 +1667,13 @@
   /* r */
   .main_news .con {
     grid-template-columns: repeat(1, 1fr);
-    gap: 30rem;
-    padding: 30rem 0;
+    gap: 3rem;
+    padding: 3rem 0;
   }
 
   /* r */
   .main_news .con em {
-    font-size: 20rem;
+    font-size: 2rem;
   }
 
   /* r */
@@ -1698,8 +1694,8 @@
 
   /* r */
   .main_contact .inner .btn_c {
-    width: 250rem;
-    height: 250rem;
+    width: 25rem;
+    height: 25rem;
     bottom: 0;
   }
 
@@ -1711,13 +1707,13 @@
 
   /* r */
   .footer .content h2 {
-    margin: 0 0 30rem 0;
+    margin: 0 0 3rem 0;
   }
 
   /* r */
   .footer .content .ft {
     grid-template-columns: repeat(1, 1fr);
-    margin: 0 auto 30rem auto;
+    margin: 0 auto 3rem auto;
   }
 
   /* r */

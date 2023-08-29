@@ -24,20 +24,15 @@ body {
     overflow: hidden;
 }
 
-
-html {
-    font-size: 6.25%;
-}
-
 .inner {
-    max-width: 1200rem;
+    max-width: 120rem;
     margin: 0 auto;
-    padding: 0 15rem;
+    padding: 0 1.5rem;
 }
 
 .sec {
     position: relative;
-    padding: 100rem 0;
+    padding: 10rem 0;
 }
 
 

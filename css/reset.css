@@ -48,39 +48,14 @@ body {
     /* 폰트 사이즈만큼 박스를 차지혀라 */
     line-height: 1;
     color: #444;
-    font-size: 16rem;
+    font-size: 1.6rem;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 em,
 address {
     font-style: normal;
 }
-
-@media(max-width: 768px) {
-
-    /* 아이폰 반응형 대응 방식 */
-    html {
-        /* vw 390인 디바이스를 기준으로 폰트 사이즈를 pc에서 쓰는 rem과 동일하게 만드는 법 */
-        font-size: 1px;
-        /* 390 size에 맞춤 (16/390*6.25/100) 디자인 사이즈 */
-    }
-
-}
-
-/* @media (max-width: 860px) {
-    html {
-        font-size: 0.13020833333333335vw;
-    }
-}
-
-@media (max-width: 1023px) {
-    html {
-        font-size: 0.09775171065493645vw;
-    }
-}
-
-@media (max-width: 1480px) {
-    html {
-        font-size: 0.06756756756756757vw;
-    }
-} */
