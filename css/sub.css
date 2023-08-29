@@ -1,0 +1,183 @@
+#sub {
+    padding: 80rem 0;
+}
+
+#sub .sub_title {
+    line-height: 300rem;
+    height: 300rem;
+    margin: 0 0 32rem 0;
+}
+
+#sub .sub_title h2 {
+    display: block;
+    font-size: 48rem;
+    font-weight: 800;
+    color: #fff;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+#sub h3 {
+    position: relative;
+    font-size: 28rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 120rem 0;
+}
+
+#sub h3::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin: 16rem 0 0 0;
+
+
+    width: 1px;
+    height: 60rem;
+    background: #555;
+    text-align: center;
+}
+
+#sub .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60rem;
+    max-width: 1000rem;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+/* 스토리 섹션 */
+#sub .s_des p {
+    font-size: 16rem;
+    margin: 0 0 40rem 0;
+}
+
+#sub .s_des strong {
+    font-weight: 18rem;
+    font-weight: 800;
+    color: #369;
+}
+
+
+#sub .s_des span {
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+/* 비전 섹션 */
+#sub .v_des strong {
+    position: relative;
+    display: block;
+    font-size: 48rem;
+    font-weight: 800;
+    color: #369;
+    margin: 0 0 16rem 0;
+}
+
+#sub .v_des strong span {
+    font-size: 36rem;
+    font-weight: 600;
+    color: #000;
+}
+
+#sub .v_des p {
+    font-size: 20rem;
+    margin: 0 0 72rem 0;
+}
+
+#sub .v_des>span {
+    font-size: 14rem;
+    font-style: 400;
+}
+
+
+#sub .aside {
+    max-width: 1200rem;
+    margin: 0 auto;
+    padding: 0 15rem;
+    background: #369;
+    color: #fff;
+    padding: 30rem 50rem;
+    border-radius: 30rem 0 30rem 0;
+    margin: -40rem auto 0 auto;
+}
+
+#sub .aside .submenu {
+    display: flex;
+    gap: 30rem;
+}
+
+#sub .aside .submenu li {
+    position: relative;
+}
+
+#sub .aside .submenu li.on::after {
+    content: "";
+    position: absolute;
+    top: -20rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.sub_content {
+    padding: 50rem 0;
+}
+
+.sub_content .tbl_wrap thead {
+    background: #369;
+    color: #fff;
+}
+
+
+@media (max-width: 767px) {
+    #sub {
+        padding: 70rem 0;
+    }
+
+    #sub .sub_title {
+        line-height: 200rem;
+        height: 200rem;
+        margin: 0 0 32rem 0;
+    }
+
+    #sub .section {
+        padding: 15rem 0;
+    }
+
+
+    #sub .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30rem;
+        margin: 0 auto;
+        text-align: justify;
+        padding: 0 15rem;
+    }
+
+    /* 스토리 섹션 */
+    #sub .s_des p {
+        font-size: 14rem;
+        margin: 0 0 24rem 0;
+    }
+
+    #sub .v_des strong {
+        text-align: center;
+        margin: 0 0 56rem 0;
+    }
+
+    #sub .v_des p {
+        font-size: 16rem;
+        margin: 0 0 56rem 0;
+        text-align: center;
+    }
+}

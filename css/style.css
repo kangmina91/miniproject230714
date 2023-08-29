@@ -75,10 +75,10 @@
 }
 
 .header .logo a {
+  display: block;
+  margin: 0 auto;
   width: 150rem;
   height: 80rem;
-  margin: 0 auto;
-  display: block;
   background: url("../images/logo.svg") center center no-repeat;
   background-size: contain;
 }
@@ -138,9 +138,9 @@
   position: absolute;
   top: 80rem;
   left: 50%;
-  width: 300rem;
-  height: 100%;
   transform: translate(-50%, 0);
+  height: 100%;
+  width: 300rem;
   text-align: left;
   padding: 30rem;
   word-break: keep-all;
@@ -165,7 +165,7 @@
   transform: translate(-50%, 0);
   height: 0;
   border-top: 1px solid var(--line);
-
+  border-bottom: 1px solid var(--line);
   background: #fff;
 }
 
@@ -176,8 +176,18 @@
 
 /* 서브젝트 명 */
 .header .gnb>ul>li .sub_menu .sub_title {
-  width: 100%;
-  height: 100%;
+  position: relative;
+}
+
+.header .gnb>ul>li .sub_menu .sub_title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -30rem 0 0 -250rem;
+  background: #ddd;
+  width: 1rem;
+  height: 400rem;
 }
 
 .header .gnb>ul>li .sub_menu .sub_title h2 {
@@ -185,11 +195,11 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  margin: 48rem 0 0 -475rem;
+  margin: 0 0 0 -505rem;
   width: 100%;
   height: 100%;
   text-align: left;
-  font-size: 72rem;
+  font-size: 56rem;
   font-weight: 600;
   text-shadow: 5rem 5rem rgba(0, 0, 0, 0.1);
 }
@@ -530,7 +540,7 @@
 }
 
 .main_solution .solution_slide .itm .tit h3 {
-  font-size: 50rem;
+  font-size: 32rem;
   font-weight: 700;
   text-align: center;
   color: transparent;
@@ -584,7 +594,7 @@
 }
 
 .main_solution .arrows i {
-  font-size: 35rem;
+  font-size: 36rem;
   color: var(--wc);
   padding: 15rem;
   cursor: pointer;
@@ -607,7 +617,7 @@
 }
 
 .main_news .title h2 {
-  font-size: 25rem;
+  font-size: 24rem;
   margin: 0 0 30rem 0;
   font-weight: 600;
 }
@@ -634,7 +644,7 @@
 }
 
 .main_news .con h3 {
-  font-size: 27rem;
+  font-size: 24rem;
   word-break: keep-all;
   font-weight: 500;
 }
@@ -643,7 +653,7 @@
 
 .main_news .con span {
   display: block;
-  font-size: 13rem;
+  font-size: 16rem;
   margin: 20rem 0 0 0;
 }
 
@@ -830,10 +840,10 @@
 
 
 */
-
+  /* r */
   .header {
     z-index: 999;
-    height: 90rem;
+    height: 80rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -848,16 +858,11 @@
     box-shadow: 0px 0rem 0rem rgba(0, 0, 0, 0);
   }
 
-  .header .logo h2 {
-    /* r */
-    position: fixed;
-    z-index: 1000;
-    border-right: none;
-  }
 
   /* r */
-  .header .logo h2 a {
-    margin: 0;
+  .header .logo a {
+    position: fixed;
+    z-index: 1002;
   }
 
   /* r */
@@ -867,119 +872,117 @@
     background: #fff;
     width: 100%;
     transition: 0.5s;
-  }
 
-  .header .gnb.on {
-    /* r */
-    inset: 0 auto 0 0;
-  }
-
-  .header .gnb>ul {
-    /* r */
-    flex-direction: column;
-    gap: 30rem;
-    align-items: center;
-    font-size: 25rem;
-    top: 90rem;
-    border-top: 1px solid var(--line);
-  }
-
-  .header .gnb>ul>li {
-    /* r */
-    line-height: 40rem;
-    width: 100%;
-
-  }
-
-  .header .gnb>ul>li>a {
-    display: block;
-    width: 100%;
-
+    /* 하위 메뉴 길이에 따른 스크롤  */
+    overflow: auto;
   }
 
   /* r */
-  .header .gnb>ul>li:first-child {
-    margin: 100rem 0 0 0;
+  .header .gnb.on {
+
+    inset: 0 auto 0 0;
   }
 
-  /* r*/
+  /* r */
+  .header .gnb>ul {
+    flex-direction: column;
+    gap: 0;
+    margin: 200rem 0 0 0
+  }
+
+  /* r */
+  .header .gnb>ul>li {
+    line-height: 50rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* r */
+  .header .gnb>ul>li:hover {
+    color: var(--dc);
+  }
+
+  /* r */
+  .header .gnb>ul>li>a {
+    font-size: 20rem;
+  }
+
+  /* r  밑줄 없애기 */
   .header .gnb>ul>li>a::before {
     display: none;
   }
 
   /* r */
-  .header .sub_menu {
-    /* r */
-    left: 0;
-    transform: translate(0, 0);
-    /* r */
-    height: 100%;
-    display: block;
-    width: 100%;
-
-    /* r */
-    border-top: none;
-    border-left: none;
-    box-shadow: 0px 0rem 0rem rgba(0, 0, 0, 0);
-  }
-
-  /* r */
-  .header .gnb>ul>li:hover>a::before {
-    display: none;
-  }
-
-  /* 메뉴 후버 - 서브 메뉴 높이 500 */
-  .header .gnb>ul>li:hover .sub_menu {
-    height: 100%;
+  .header .gnb .sub_menu {
     /* r */
     position: static;
-    transition: none;
-  }
-
-  /* r */
-  .header .gnb>ul>li:not(:hover) .sub_menu {
-    display: none;
-  }
-
-  /* 서브젝트 명 */
-  .header .gnb>ul>li:hover .sub_menu>span {
-    /* r */
-    display: none;
-  }
-
-  /* 서브 메뉴들 */
-  /* r */
-  .header .gnb>ul>li:hover .sub_menu>li {
+    text-align: center;
+    transform: translate(0, 0);
+    background: none;
     margin: 0 0 0 0;
     width: 100%;
-    padding: 0 15rem;
-    font-size: 15rem;
-    text-align: center;
+  }
+
+
+
+  /* r */
+  .header .gnb>ul>li:hover .sub_menu {
+    display: none;
   }
 
   /* r */
-  .header .gnb>ul>li:hover .sub_menu>li>a {
+  .header .gnb>ul>li .sub_menu::before {
+    display: none;
+  }
+
+  /* r */
+  .header .gnb>ul>li .sub_menu .sub_title {
+    display: none;
+  }
+
+  .header .gnb>ul>li .sub_menu>li {
     width: 100%;
+    position: none;
   }
 
   /* r */
-  .header .gnb>ul>li:hover .sub_menu>li:hover>ul {
-    display: none;
+  .header .gnb>ul>li .sub_menu>li>a {
+    display: block;
+    width: 100%;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 40rem;
+  }
+
+
+  /* 서브메뉴들의 a태그 */
+  .header .gnb>ul>li:hover .sub_menu>li>a {
+    display: block;
+    width: 100%;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 40rem;
   }
 
 
   /* r */
-  .header .gnb>ul>li:hover .sub_menu>li:hover>a::after {
+  .header .gnb>ul>li:hover .sub_menu>li>a::after {
     display: none;
   }
 
+  /* r */
+  .header .gnb>ul>li .sub_menu>li>ul {
+    display: none;
+  }
+
+  .header .gnb>ul>li:hover .sub_menu>li:hover>ul>li>a {
+    display: none;
+  }
 
   /* r */
   .header .gnb_box {
     display: none;
   }
-
-
 
 
   /* 
@@ -988,6 +991,7 @@
 
 
 */
+
   /* r */
   .main_visual {
     height: 60vh;
@@ -1236,7 +1240,7 @@
     display: block;
 
     position: fixed;
-    inset: 30px 30px auto auto;
+    inset: 25px 25px auto auto;
     z-index: 1000;
     width: 30px;
     height: 30px;
@@ -1294,6 +1298,20 @@
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 
 
@@ -1315,10 +1333,10 @@
 
 
 */
-
+  /* r */
   .header {
     z-index: 999;
-    height: 90rem;
+    height: 100rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -1333,16 +1351,13 @@
     box-shadow: 0px 0rem 0rem rgba(0, 0, 0, 0);
   }
 
-  .header .logo h2 {
-    /* r */
-    position: fixed;
-    z-index: 1000;
-    border-right: none;
-  }
 
   /* r */
-  .header .logo h2 a {
-    margin: 0;
+  .header .logo a {
+    position: fixed;
+    width: 200rem;
+    height: 100rem;
+    z-index: 1002;
   }
 
   /* r */
@@ -1352,104 +1367,111 @@
     background: #fff;
     width: 100%;
     transition: 0.5s;
-  }
 
-  .header .gnb.on {
-    /* r */
-    inset: 0 auto 0 0;
-  }
-
-  .header .gnb>ul {
-    /* r */
-    flex-direction: column;
-    gap: 30rem;
-    align-items: center;
-    font-size: 25rem;
-    top: 90rem;
-    border-top: 1px solid var(--line);
-  }
-
-  .header .gnb>ul>li {
-    /* r */
-    line-height: 40rem;
-    width: 100%;
+    /* 하위 메뉴 길이에 따른 스크롤  */
+    overflow: auto;
   }
 
   /* r */
-  .header .gnb>ul>li:first-child {
-    margin: 100rem 0 0 0;
+  .header .gnb.on {
+
+    inset: 0 auto 0 0;
   }
 
-  /* r*/
+  /* r */
+  .header .gnb>ul {
+    flex-direction: column;
+    gap: 0;
+    margin: 200rem 0 0 0
+  }
+
+  /* r */
+  .header .gnb>ul>li {
+    line-height: 100rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* r */
+  .header .gnb>ul>li:hover {
+    color: var(--dc);
+  }
+
+  /* r */
+  .header .gnb>ul>li>a {
+    font-size: 36rem;
+  }
+
+  /* r  밑줄 없애기 */
   .header .gnb>ul>li>a::before {
     display: none;
   }
 
   /* r */
-  .header .sub_menu {
-    /* r */
-    left: 0;
-    transform: translate(0, 0);
-
-    /* r */
-    height: 100%;
-    display: block;
-    width: 100%;
-
-    /* r */
-    border-top: none;
-    border-left: none;
-    box-shadow: 0px 0rem 0rem rgba(0, 0, 0, 0);
-  }
-
-  /* r */
-  .header .gnb>ul>li:hover>a::before {
-    display: none;
-  }
-
-  /* 메뉴 후버 - 서브 메뉴 높이 500 */
-  .header .gnb>ul>li:hover .sub_menu {
-    height: 100%;
+  .header .gnb .sub_menu {
     /* r */
     position: static;
-    transition: none;
-  }
-
-  /* r */
-  .header .gnb>ul>li:not(:hover) .sub_menu {
-    display: none;
-  }
-
-  /* 서브젝트 명 */
-  .header .gnb>ul>li:hover .sub_menu>span {
-    /* r */
-    display: none;
-  }
-
-  /* 서브 메뉴들 */
-  /* r */
-  .header .gnb>ul>li:hover .sub_menu>li {
+    text-align: center;
+    transform: translate(0, 0);
+    background: none;
     margin: 0 0 0 0;
     width: 100%;
-    padding: 0 15rem;
-    font-size: 15rem;
-    text-align: center;
-  }
-
-  /* r */
-  .header .gnb>ul>li:hover .sub_menu>li a {
-    width: 100%;
   }
 
 
+
   /* r */
-  .header .gnb>ul>li:hover .sub_menu>li:hover>ul {
+  .header .gnb>ul>li:hover .sub_menu {
     display: none;
   }
 
+  /* r */
+  .header .gnb>ul>li .sub_menu::before {
+    display: none;
+  }
 
   /* r */
-  .header .gnb>ul>li:hover .sub_menu>li:hover>a::after {
+  .header .gnb>ul>li .sub_menu .sub_title {
+    display: none;
+  }
+
+  .header .gnb>ul>li .sub_menu>li {
+    width: 100%;
+    position: none;
+  }
+
+  /* r */
+  .header .gnb>ul>li .sub_menu>li>a {
+    display: block;
+    width: 100%;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 40rem;
+  }
+
+
+  /* 서브메뉴들의 a태그 */
+  .header .gnb>ul>li:hover .sub_menu>li>a {
+    display: block;
+    width: 100%;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 40rem;
+  }
+
+
+  /* r */
+  .header .gnb>ul>li:hover .sub_menu>li>a::after {
+    display: none;
+  }
+
+  /* r */
+  .header .gnb>ul>li .sub_menu>li>ul {
+    display: none;
+  }
+
+  /* r */
+  .header .gnb>ul>li:hover .sub_menu>li:hover>ul>li>a {
     display: none;
   }
 
@@ -1458,6 +1480,7 @@
   .header .gnb_box {
     display: none;
   }
+
 
   /* 
 
@@ -1713,7 +1736,7 @@
     display: block;
 
     position: fixed;
-    inset: 30px 30px auto auto;
+    inset: 35px 20px auto auto;
     z-index: 1000;
     width: 30px;
     height: 30px;

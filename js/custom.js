@@ -158,23 +158,24 @@ $(function () {
 
 
     $('.mobile_btn').on('click', function () {
+        $(this).toggleClass('on');
         $('.gnb').toggleClass('on');
-
     });
 
     $('.gnb>ul>li>a').on('click', function (e) {
 
         if ($('.gnb').hasClass('on')) {
             e.preventDefault();
-            $(this).next().stop().slideToggle();
-
         }
+        $(this).next().stop().slideToggle();
+        $(this).parent().siblings().find('.gnb .sub_menu').stop().slideUp();
     });
 
 
 
+
     $(window).on('resize', function () {
-        $('.gnb').removeClass('on');
+        $('.gnb .sub_menu').removeAttr('style')
     })
 
     // 모바일 메뉴 스크롤 없애기
