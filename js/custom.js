@@ -60,7 +60,7 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
-        centerPadding: '10rem',
+        centerPadding: '1rem',
         speed: 1000,
         slidesToShow: 3, // 보여질슬라이드수(생략가능)
         slidesToScroll: 1, // 이동슬라이드수(생략가능)
